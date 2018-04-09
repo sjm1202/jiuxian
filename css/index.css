@@ -1,0 +1,287 @@
+@charset "UTF-8";
+.publicIcon {
+  background: url(../img/public-24.png) no-repeat;
+  _background: url(../img/public-8.png) no-repeat;
+}
+
+.topHeader {
+  width: 100%;
+  background: #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  min-width: 1000px;
+}
+.topHeader .topHeaderCon {
+  width: 1200px;
+  height: 26px;
+  margin: 0 auto;
+  line-height: 26px;
+  position: relative;
+}
+.topHeader .topHeaderCon .topHeaderLeft {
+  width: 370px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.topHeader .topHeaderCon .topHeaderLeft p, .topHeader .topHeaderCon .topHeaderLeft a {
+  margin-right: 6px;
+  float: left;
+  line-height: 26px;
+}
+.topHeader .topHeaderCon .topHeaderRight {
+  height: 26px;
+  float: right;
+}
+.topHeader .topHeaderCon .topHeaderRight .dropTitle {
+  z-index: 205;
+  padding: 0 4px 0 7px;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+.topHeader .topHeaderCon .topHeaderRight .dropTitle s {
+  width: 9px;
+  height: 8px;
+  background-position: -99px 3px;
+  margin: 9px 1px 9px 3px;
+  transition: all .5s;
+  float: right;
+}
+.topHeader .topHeaderCon .topHeaderRight .dropTitle:hover s {
+  transform: rotate(180deg);
+}
+.topHeader .topHeaderCon .topHeaderRight .dropTitle.on {
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  background: #fff;
+  height: 27px;
+  margin-bottom: -1px;
+}
+.topHeader .topHeaderCon .topHeaderRight li {
+  height: 26px;
+  float: left;
+  padding: 0 5px;
+  position: relative;
+}
+.topHeader .topHeaderCon .topHeaderRight li s, .topHeader .topHeaderCon .topHeaderRight li a, .topHeader .topHeaderCon .topHeaderRight li i {
+  display: block;
+  float: left;
+  color: #999;
+}
+.topHeader .topHeaderCon .topHeaderRight li i {
+  width: 12px;
+  height: 12px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+}
+.topHeader .topHeaderCon .topHeaderRight li .dropTitleBox {
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  position: absolute;
+  top: 27px;
+  left: -1px;
+  z-index: 206;
+  background: #fff;
+  padding: 5px 0;
+  display: none;
+}
+.topHeader .topHeaderCon .topHeaderRight li .dropTitleBox a {
+  width: 72px;
+  text-align: center;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n1 .dropTitleBox {
+  width: 72px;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n1 .dropTitleBox a {
+  width: 72px;
+  text-align: center;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n2 a, .topHeader .topHeaderCon .topHeaderRight li.hd-n4 a {
+  height: 16px;
+  line-height: 16px;
+  color: #c00;
+  text-decoration: none;
+  margin: 5px 5px 0 0;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n3 i {
+  background-position: -18px 1px;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n3 b {
+  color: #c00;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n4 s, .topHeader .topHeaderCon .topHeaderRight li.hd-n5 s, .topHeader .topHeaderCon .topHeaderRight li.hd-n6 s {
+  width: 0;
+  height: 12px;
+  border-left: 1px solid #ccc;
+  right: 0;
+  top: 7px;
+  overflow: hidden;
+  position: absolute;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n6 a {
+  height: 16px;
+  line-height: 16px;
+  padding: 0 3px;
+  background-color: #cc0001;
+  color: #fff;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n6 a i {
+  background-position: -62px 0;
+  margin: 2px 3px 0 0;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n6 a .erm2015922 {
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  top: 26px;
+  left: 2px;
+  display: none;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n7 i {
+  background-position: -80px 0;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n7 .subNavBox {
+  width: 205px;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n7 .subNavBox .subNav-item {
+  width: 165px;
+  padding: 6px 20px 8px;
+  overflow: hidden;
+  border-bottom: 1px solid #ededed;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n7 .subNavBox .subNav-item.bg {
+  background-color: #f9f9f9;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n7 .subNavBox .subItem-tit {
+  width: 205px;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n7 .subNavBox .sbItem-con {
+  width: 205px;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n7 .subNavBox .sbItem-con a {
+  width: 48px;
+  margin-right: 10px;
+  height: 24px;
+  line-height: 24px;
+  text-align: left;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n8 i {
+  background-position: -90px -265px;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n8 .dropTitleBox {
+  width: 89px;
+}
+.topHeader .topHeaderCon .topHeaderRight li.hd-n9 .servPhone {
+  color: #c00;
+  padding-left: 5px;
+}
+
+.topFocusBox a {
+  display: block;
+  height: 90px;
+  width: 100%;
+  background: url("../img/topfocusbox.jpg") no-repeat center top scroll;
+}
+
+.midlHeader {
+  width: 100%;
+}
+.midlHeader .midHeaderCon {
+  width: 1200px;
+  height: 125px;
+  margin: 0 auto;
+}
+.midlHeader .midHeaderCon .headerLogo {
+  width: 257px;
+  height: 65px;
+  margin-top: 30px;
+  overflow: hidden;
+  float: left;
+}
+.midlHeader .midHeaderCon .headerLogo .jxwLogo, .midlHeader .midHeaderCon .headerLogo .home_logogi {
+  float: left;
+}
+.midlHeader .midHeaderCon .headerLogo .jxwLogo img, .midlHeader .midHeaderCon .headerLogo .home_logogi img {
+  display: block;
+}
+.midlHeader .midHeaderCon .headerSearch {
+  float: left;
+  position: relative;
+  margin: 32px 0 0 20px;
+}
+.midlHeader .midHeaderCon .headerSearch .searchHome {
+  height: 32px;
+  border: 3px solid #c00;
+}
+.midlHeader .midHeaderCon .headerSearch .searchHome .search-form {
+  width: 439px;
+  height: 22px;
+  line-height: 22px;
+  padding: 5px;
+  border: 0 none;
+  color: #666;
+  float: left;
+}
+.midlHeader .midHeaderCon .headerSearch .searchHome .search-btn {
+  width: 85px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+  color: #fff;
+  background: #c00;
+  font-family: "微软雅黑";
+  float: right;
+  cursor: pointer;
+}
+.midlHeader .midHeaderCon .headerSearch .hotWords {
+  padding-top: 5px;
+}
+.midlHeader .midHeaderCon .headerSearch .hotWords p {
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  left: -8px;
+  z-index: 1;
+}
+.midlHeader .midHeaderCon .headerSearch .hotWords p a {
+  float: left;
+  display: inline-block;
+  color: #999;
+  padding: 0 8px;
+  height: 18px;
+  position: relative;
+}
+.midlHeader .midHeaderCon .headerSearch .hotWords p s {
+  display: block;
+  height: 12px;
+  width: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 1px solid #999;
+  position: absolute;
+  left: -1px;
+  top: 3px;
+}
+.midlHeader .midHeaderCon .headerProtect {
+  height: 64px;
+  width: 363px;
+  float: right;
+  margin-top: 33px;
+  background: url(../img/headerProPic1.png) no-repeat top left;
+}
+
+.navWrap {
+  width: 100%;
+  height: 34px;
+  background: #900;
+  position: relative;
+}
+
+/*# sourceMappingURL=index.css.map */
