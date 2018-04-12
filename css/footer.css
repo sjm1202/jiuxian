@@ -1,0 +1,197 @@
+@charset "UTF-8";
+body,
+html {
+  height: 100%;
+}
+
+.publicIcon {
+  background: url(../img/public-24.png) no-repeat;
+}
+
+.newIndexIcon {
+  background: url(../img/newIndexIcon-24.png) no-repeat;
+}
+
+.footer {
+  width: 100%;
+}
+.footer .footerTopBox {
+  width: 100%;
+  background: #333;
+}
+.footer .footerTopBox .footerTop {
+  width: 1200px;
+  margin: 0 auto;
+  height: 84px;
+  border-bottom: 1px solid #494949;
+}
+.footer .footerTopBox .footerTop .footerContact {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 22px 0;
+  font-family: "微软雅黑";
+}
+.footer .footerTopBox .footerTop .footerContact i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-position: -144px -22px;
+  margin-right: 18px;
+}
+.footer .footerTopBox .footerTop .footerContact b {
+  font-size: 24px;
+  color: #c00;
+  margin-right: 25px;
+}
+.footer .footerTopBox .footerTop .footerContact span {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 8px;
+}
+.footer .footerTopBox .footerTop .footerTopRight {
+  float: right;
+  height: 32px;
+  padding: 26px 0px;
+}
+.footer .footerTopBox .footerTop .footerTopRight .ftRight-tit {
+  float: left;
+  line-height: 32px;
+  color: white;
+  font-family: 微软雅黑;
+  padding-right: 10px;
+}
+.footer .footerTopBox .footerTop .footerTopRight .ftRight-form {
+  float: left;
+  width: 240px;
+  height: 30px;
+  position: relative;
+  z-index: 99;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #494949;
+  border-image: initial;
+}
+.footer .footerTopBox .footerTop .footerTopRight .ftRight-form input {
+  width: 190px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  color: white;
+  padding: 0px 6px;
+  background: 0px center;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: 0px;
+}
+.footer .footerTopBox .footerTop .footerTopRight .ftRight-form span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  color: #999999;
+  position: absolute;
+  left: 6px;
+  top: 0px;
+}
+.footer .footerTopBox .footerTop .footerTopRight .ftRight-form i {
+  display: inline-block;
+  width: 22px;
+  height: 18px;
+  cursor: pointer;
+  float: left;
+  background-position: -133px 0px;
+  margin: 6px 0px 0px 10px;
+}
+.footer .footerServices {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 60px;
+}
+.footer .footerServices ul li {
+  width: 158px;
+  margin: 0 auto;
+  padding: 30px 0 60px;
+  float: left;
+}
+.footer .footerServices ul li h3 {
+  font-weight: normal;
+  height: 26px;
+  line-height: 26px;
+  padding: 5px 0;
+}
+.footer .footerServices ul li h3 i {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+  float: left;
+}
+.footer .footerServices ul li.servicesItme01 h3 i {
+  background-position: 0 -131px;
+}
+.footer .footerServices ul li.servicesItme02 h3 i {
+  background-position: -30px -131px;
+}
+.footer .footerServices ul li.servicesItme03 h3 i {
+  background-position: -60px -131px;
+}
+.footer .footerServices ul li.servicesItme04 h3 i {
+  background-position: -90px -131px;
+}
+.footer .footerServices ul li.servicesItme05 h3 i {
+  background-position: -120px -131px;
+}
+.footer .footerServices ul li.servicesItme06 h3 i {
+  background-position: -150px -131px;
+}
+.footer .footerServices ul li p {
+  width: 123px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.footer .footerServices ul li.jxMicroblogging {
+  margin-right: 0;
+}
+.footer .footerServices ul li.jxMicroblogging .item {
+  width: 130px;
+  height: 28px;
+  line-height: 28px;
+  padding: 5px 0 13px;
+  position: relative;
+}
+.footer .footerServices ul li.jxMicroblogging .item a {
+  display: inline-block;
+  color: #fff;
+  font-family: "微软雅黑";
+  float: left;
+}
+.footer .footerServices ul li.jxMicroblogging .item i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 9px;
+  float: left;
+  cursor: pointer;
+}
+.footer .footerServices ul li.jxMicroblogging .item.sinaMb i {
+  background-position: -140px -74px;
+}
+.footer .footerServices ul li.jxMicroblogging .item.weixin i {
+  background-position: -103px -74px;
+}
+.footer .footerServices ul li.jxMicroblogging .item.weixin .weixinCode {
+  width: 84px;
+  height: 84px;
+  position: absolute;
+  left: 37px;
+  top: 35px;
+  display: none;
+}
+
+/*# sourceMappingURL=footer.css.map */

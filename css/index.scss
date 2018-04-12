@@ -1,204 +1,1157 @@
 @charset "utf-8";
+body,
+html {
+    height: 100%;
+}
+
 .publicIcon {
     background: url(../img/public-24.png) no-repeat;
-    _background: url(../img/public-8.png) no-repeat
 }
-@mixin content($h,$w:1200px){
+
+.newIndexIcon {
+    background: url(../img/newIndexIcon-24.png) no-repeat;
+}
+
+@mixin content($h, $w:1200px) {
     width: $w;
     height: $h;
     margin: 0 auto;
-    
 }
-.topHeader{
+
+.topFocusBox {
+    a {
+        display: block;
+        height: 90px;
+        width: 100%;
+        background: url("../img/topfocusbox.jpg") no-repeat center top scroll;
+    }
+}
+
+
+.homeMainbody {
     width: 100%;
-    background: #f2f2f2;
-    border-bottom: 1px solid #f2f2f2; 
-    min-width: 1000px;
-    .topHeaderCon{
-        @include content(26px);
-        line-height:26px;
+    min-width: 1200px;
+    .mainBanner {
+        width: 100%;
         position: relative;
-        
-        .topHeaderLeft{
-            width: 370px;
-            position: absolute;
-            left: 0;
-            top: 0;
+        height: 470px;
+        background: #f9f9f9;
+        overflow: hidden;
+        .bigImg {
+            position: relative;
             overflow: hidden;
-            p,a{
-            margin-right: 6px;
-            float: left;
-            line-height: 26px;
+            .bigUl {
+                width: 100%;
+                height: 470px;
+                position: relative;
+                li {
+                    width: 100%;
+                    height: 470px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: none;
+                    .ban_cter {
+                        height: 470px;
+                        width: 1200px;
+                        margin: 0 auto;
+                        position: relative;
+                        .focusArea {
+                            display: block;
+                            height: 470px;
+                            width: 1200px;
+                        }
+                        .mav {
+                            height: 470px;
+                            width: 190px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            z-index: 1;
+                            a {
+                                display: block;
+                                height: 156px;
+                                width: 190px;
+                                position: relative;
+                                margin-bottom: 1px;
+                            }
+                            span {
+                                height: 156px;
+                                width: 190px;
+                                position: absolute;
+                                background: #fff;
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+            }
         }
+        .smallBtn {
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            top: 435px;
+            left: 0;
+            text-align: center;
+            z-index: 20;
+            .smallUl {
+                height: 20px;
+                margin: 0 auto;
+                position: relative;
+                li {
+                    background: #000;
+                    border-radius: 50%;
+                    box-shadow: 0 0 3px;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    zoom: 1;
+                    font-size: 12px;
+                    height: 20px;
+                    width: 20px;
+                    line-height: 20px;
+                    margin-right: 8px;
+                    opacity: 0.8;
+                    text-align: center;
+                    overflow: hidden;
+                    &.on {
+                        background: #dd102e;
+                    }
+                }
+            }
         }
-        .topHeaderRight{
-            height: 26px;
-            float:right;
-            .dropTitle {
-                z-index: 205;
-                padding: 0 4px 0 7px;
-                border-left: 1px solid #f2f2f2;
-                border-right: 1px solid #f2f2f2;
-                s {
-                    width: 9px;
-                    height: 8px;
-                    background-position: -99px 3px;
-                    margin: 9px 1px 9px 3px;
-                    transition: all .5s;
+    }
+    .mainWrap {
+        width: 100%;
+        background: #f9f9f9;
+        padding: 10px 0;
+        overflow: hidden;
+        position: relative;
+        .mainbox {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            .bgLeft {
+                width: 500px;
+                position: absolute;
+                left: -500px;
+                top: 0;
+                height: 1000px;
+                z-index: 0;
+                a {
+                    width: 500px;
+                    height: 1000px;
+                    display: block;
+                    outline: none;
+                    background: url(../img/bgLeft.png) no-repeat right top;
+                }
+            }
+            .bgRight {
+                width: 500px;
+                position: absolute;
+                right: -500px;
+                height: 1000px;
+                top: 0;
+                z-index: 0;
+                a {
+                    width: 500px;
+                    height: 1000px;
+                    display: block;
+                    outline: none;
+                    background: url(../img/bgRight.png) no-repeat right top;
                     float: right;
                 }
-                
             }
-            .dropTitle:hover{
-                s {
-                    transform: rotate(180deg)
-                }
-            }
-            .dropTitle.on {
-                border-left: 1px solid #ededed;
-                border-right: 1px solid #ededed;
-                background: #fff;
-                height: 27px;
-                margin-bottom: -1px
-            }
-            li{
-                height: 26px;
-                float:left;
-                padding: 0 5px;
-                position: relative;
-                s,a,i{
-                    display:block;
-                    float:left;
-                    color: #999;
-                }
-                i{
-                    width: 12px;
-                    height: 12px;
-                    margin: 7px 5px 0 0;
-                    overflow: hidden
-                }
-                .dropTitleBox{
-                    border: 1px solid #e5e5e5;
-                    border-top: 0;
+            .fixDiv {
+                position: fixed;
+                top: 327px;
+                left: 50%;
+                transform: scaleY(1);
+                display: none;
+                z-index: 300;
+                margin-left: -650px;
+                height: 205px;
+                width: 40px;
+                text-align: center;
+                a {
+                    min-width: 30px;
+                    height: 30px;
                     position: absolute;
-                    top: 27px;
-                    left: -1px;
-                    z-index: 206;
-                    background: #fff;
-                    padding: 5px 0;
-                    display: none;
-                    a{
-                        width:72px;
-                        text-align:center;
+                    left: 0px;
+                    top: 0px;
+                    color: rgb(255, 255, 255);
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 30px;
+                    cursor: pointer;
+                    font-family: 微软雅黑;
+                    border-radius: 30px;
+                    text-decoration: none;
+                    //overflow: hidden;
+                    border: 1px solid #f1f1f1;
+                    &.floorBg {
+                        background: #f1f1f1;
+                        z-index: 2;
+                    }
+                    &.floorOneOn {
+                        background: #d43d4e;
+                    }
+                    &.floorTwoOn {
+                        background: #c2782f;
+                    }
+                    &.floorThreeOn {
+                        background: #296693;
+                    }
+                    &.floorFourOn {
+                        background: #6c9d0e;
+                    }
+                    &.floorFiveOn {
+                        background: #fe7a65;
                     }
                 }
-                &.hd-n1{
-                    .dropTitleBox{
-                        width: 72px;
-                        a{
-                            width: 72px;
-                            text-align: center;  
-                        }
-                    }
-                } 
-                &.hd-n2, &.hd-n4{
-                    a{
-                        height: 16px;
-                        line-height: 16px;
-                        color: #c00;
-                        text-decoration: none;
-                        margin : 5px 5px 0 0;
-                    
-                    }
-                   
-                }
-                &.hd-n3{
-                    i{
-                        background-position: -18px 1px;
-                    }
-                    b{
-                        color: #c00;
-                    }   
-                }   
-                &.hd-n4,&.hd-n5,&.hd-n6{
-                    s{
-                        width: 0;
-                        height: 12px;
-                        border-left: 1px solid #ccc;
-                        right: 0;
-                        top: 7px;
-                        overflow: hidden;
-                        position: absolute;
-                    }
-                   
-                }
-                &.hd-n6{
-                    a{
-                        height: 16px;
-                        line-height: 16px;
-                        padding: 0 3px;
-                        background-color: #cc0001;
-                        color: #fff;
-                        margin: 5px 5px 0 0;
-                        display: inline-block;
-                        i{
-                            background-position: -62px 0;
-                            margin: 2px 3px 0 0;
-                        }
-                        .erm2015922{
-                            padding: 5px;
-                            border: 1px solid #ccc;
-                            background-color: #fff;
+                div {
+                    position: absolute;
+                    left: 0;
+                    font-size: 12px;
+                    text-align: center;
+                    cursor: pointer;
+                    &.floorOne {
+                        top: 0;
+                        i {
+                            width: 12px;
+                            height: 20px;
+                            background-position: 0 -181px;
                             position: absolute;
-                            top: 26px;
-                            left: 2px;
+                            left: 9px;
+                            top: 5px;
+                        }
+                    }
+                    &.floorTwo {
+                        top: 31px;
+                        i {
+                            width: 8px;
+                            height: 21px;
+                            background-position: -18px -180px;
+                            position: absolute;
+                            left: 11px;
+                            top: 5px;
+                        }
+                    }
+                    &.floorThree {
+                        top: 62px;
+                        i {
+                            width: 20px;
+                            height: 20px;
+                            background-position: -31px -181px;
+                            position: absolute;
+                            left: 6px;
+                            top: 5px;
+                        }
+                    }
+                    &.floorFour {
+                        top: 93px;
+                        i {
+                            width: 12px;
+                            height: 19px;
+                            background-position: -56px -180px;
+                            position: absolute;
+                            left: 9px;
+                            top: 5px;
+                        }
+                    }
+                    &.floorFive {
+                        top: 124px;
+                        i {
+                            width: 15px;
+                            height: 16px;
+                            background-position: -39px -213px;
+                            position: absolute;
+                            left: 8px;
+                            top: 6px;
+                        }
+                    }
+                }
+                .floorBack {
+                    width: 30px;
+                    height: 30px;
+                    color: #fff;
+                    font-size: 12px;
+                    text-align: center;
+                    border-radius: 30px;
+                    line-height: 30px;
+                    position: absolute;
+                    left: 0;
+                    cursor: pointer;
+                    top: 155px;
+                    background: #f1f1f1;
+                    i {
+                        background-position: -74px -190px;
+                        width: 15px;
+                        height: 10px;
+                        position: absolute;
+                        left: 8px;
+                        top: 10px;
+                    }
+                }
+            }
+            .main1 {
+                height: 500px;
+                width: 100%;
+                .left {
+                    height: 498px;
+                    width: 919px;
+                    border: 1px solid #ececec;
+                    border-top: 0;
+                    float: left;
+                    .tit {
+                        width: 100%;
+                        height: 36px;
+                        li {
+                            height: 34px;
+                            width: 183px;
+                            line-height: 33px;
+                            text-align: center;
+                            font-size: 17px;
+                            float: left;
+                            border: 1px solid #ececec;
+                            border-left: 0;
+                            cursor: pointer;
+                            &.last {
+                                border-right: 0;
+                            }
+                            &.active {
+                                border-top: 2px solid #cc0000;
+                                border-bottom: 0;
+                                background: #fff;
+                                color: #cc0000;
+                            }
+                        }
+                    }
+                    .content {
+                        height: 462px;
+                        width: 100%;
+                        display: none;
+                        background: #fff;
+                        li {
+                            width: 182px;
+                            margin-top: 20px;
+                            float: left;
+                            img {
+                                display: block;
+                                padding: 0 11px;
+                            }
+                            p {
+                                padding: 0 11px;
+                                strong {
+                                    color: red;
+                                }
+                            }
+                        }
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+                .right {
+                    height: 500px;
+                    width: 270px;
+                    float: right;
+                    overflow: hidden;
+                    .top {
+                        height: 140px;
+                        width: 268px;
+                        border: 1px solid #ececec;
+                        margin-bottom: 10px;
+                        .tit {
+                            width: 100%;
+                            height: 36px;
+                            li {
+                                height: 34px;
+                                width: 133.5px;
+                                line-height: 33px;
+                                text-align: center;
+                                font-size: 17px;
+                                float: left;
+                                border: 1px solid #ececec;
+                                border-left: 0;
+                                cursor: pointer;
+                                &.last {
+                                    border-right: 0;
+                                }
+                                &.active {
+                                    border-top: 2px solid #cc0000;
+                                    border-bottom: 0;
+                                    background: #fff;
+                                    color: #cc0000;
+                                }
+                            }
+                        }
+                        .content {
+                            height: 104px;
+                            width: 100%;
+                            background: #fff;
                             display: none;
+                            &.active {
+                                display: block;
+                            }
+                            li {
+                                padding: 14px 0 0 14px;
+                                width: 100px;
+                                height: 16px;
+                                margin-right: 20px;
+                                float: left;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                    .middle {
+                        height: 157px;
+                        width: 268px;
+                        margin-bottom: 10px;
+                        position: relative;
+                        .pics {
+                            width: 300%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            li {
+                                float: left;
+                            }
+                        }
+                        .btn {
+                            height: 12px;
+                            width: 100%;
+                            position: absolute;
+                            top: 132px;
+                            left: 13px;
+                            li {
+                                display: inline-block;
+                                width: 12px;
+                                height: 12px;
+                                background: #cccccc;
+                                border-radius: 50%;
+                                margin: 0 5px;
+                                overflow: hidden;
+                                cursor: pointer;
+                                &.active {
+                                    background: #6d81ae;
+                                }
+                            }
+                        }
+                    }
+                    .bottom {
+                        height: 178px;
+                        width: 268px;
+                        border: 1px solid #ececec;
+                        background: red;
+                        position: relative;
+                        .pics {
+                            width: 400%;
+                            position: absolute;
+                            li {
+                                float: left;
+                            }
+                        }
+                        .btn {
+                            height: 12px;
+                            width: 100%;
+                            position: absolute;
+                            top: 132px;
+                            left: 13px;
+                            li {
+                                display: inline-block;
+                                width: 12px;
+                                height: 12px;
+                                background: #cccccc;
+                                border-radius: 50%;
+                                margin: 0 5px;
+                                overflow: hidden;
+                                cursor: pointer;
+                                &.active {
+                                    background: #6d81ae;
+                                }
+                            }
                         }
                     }
                 }
-                &.hd-n7{
-                    i{
-                        background-position: -80px 0;
+            }
+            .banner2 {
+                padding: 21px 0;
+                width: 100%;
+                height: 130px;
+                ul {
+                    li {
+                        width: 393px;
+                        ;
+                        margin-right: 10px;
+                        background: #ececf4;
+                        float: left;
+                        text-align: center;
+                        &.last {
+                            margin-right: 0;
+                        }
+                        img {
+                            display: inline-block;
+                        }
                     }
-                    .subNavBox{
-                        width:205px;
-                        .subNav-item{
-                            width: 165px;
-                            padding: 6px 20px 8px;
+                }
+            }
+            .banner3 {
+                height: 300px;
+                width: 100%;
+                .titleBox {
+                    height: 40px;
+                    width: 100%;
+                    p {
+                        display: block;
+                        float: left;
+                        margin-top: 10px;
+                        height: 20px;
+                        font-size: 17px;
+                        line-height: 20px;
+                        i {
+                            background-position: 0 0;
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            margin-right: 10px;
+                            float: left;
+                        }
+                    }
+                    .btn {
+                        height: 9px;
+                        margin-top: 20px;
+                        float: right;
+                        li {
+                            height: 9px;
+                            width: 9px;
+                            background: #cccccc;
+                            float: left;
+                            margin-left: 20px;
+                            cursor: pointer;
+                            &.active {
+                                background: #cc0000;
+                            }
+                        }
+                    }
+                }
+                .contentBox {
+                    height: 257px;
+                    border: 1 solid #ececec;
+                    background: #fff;
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid #ececec;
+                    .leftBtn {
+                        width: 27px;
+                        height: 56px;
+                        display: block;
+                        position: absolute;
+                        top: 100px;
+                        z-index: 100;
+                        cursor: pointer;
+                        background-position: 0 -28px;
+                        left: 0;
+                    }
+                    .rightBtn {
+                        width: 27px;
+                        height: 56px;
+                        display: block;
+                        position: absolute;
+                        top: 100px;
+                        z-index: 100;
+                        cursor: pointer;
+                        background-position: -28px -28px;
+                        right: 0;
+                    }
+                    .content {
+                        width: 300%;
+                        height: 257px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        li {
+                            float: left;
+                            height: 227px;
+                            padding: 20px 19px 10px 20px;
+                            display: inline;
+                            width: 160px;
+                        }
+                        p {
+                            strong {
+                                color: #cc0000;
+                            }
+                            &.last {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .floorBox {
+                border: 1px solid #ececec;
+                margin-top: 10px;
+                &.floorOneBox{
+                    .titleBox{
+                        .link{
+                            li{
+                                a.last{
+                                    background-color: #d43d4e;    
+                                }
+                            }
+                        }
+                    }
+                    .contentBox{
+                        .top{
+                            border-top: 2px solid #d43d4e;
+                            .left{
+                                .btns li.active{
+                                    background-color: #d43d4e;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.floorTwoBox{
+                    .titleBox{
+                        .link{
+                            li{
+                                a.last{
+                                    background-color: #c2782f;    
+                                }
+                            }
+                        }
+                    }
+                    .contentBox{
+                        .top{
+                            border-top: 2px solid #c2782f;
+                            .left{
+                                .btns li.active{
+                                    background-color: #c2782f;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.floorThreeBox{
+                    .titleBox{
+                        .link{
+                            li{
+                                a.last{
+                                    background-color: #296693;    
+                                }
+                            }
+                        }
+                    }
+                    .contentBox{
+                        .top{
+                            border-top: 2px solid #296693;
+                            .left{
+                                .btns li.active{
+                                    background-color: #296693;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.floorFourBox{
+                    .titleBox{
+                        .link{
+                            li{
+                                a.last{
+                                    background-color: #6c9d0e;    
+                                }
+                            }
+                        }
+                    }
+                    .contentBox{
+                        .top{
+                            border-top: 2px solid #6c9d0e;
+                            .left{
+                                .btns li.active{
+                                    background-color: #6c9d0e;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.floorFiveBox{
+                    .titleBox{
+                        .link{
+                            li{
+                                a.last{
+                                    background-color: #fe7a65;    
+                                }
+                            }
+                        }
+                    }
+                    .contentBox{
+                        .top{
+                            border-top: 2px solid #fe7a65;
+                            .left{
+                                .btns li.active{
+                                    background-color: #fe7a65;
+                                }
+                            }
+                        }
+                    }
+                }
+                .titleBox {
+                    height: 40px;
+                    .tit {
+                        height: 40px;
+                        float: left;
+                        i {
+                            width: 28px;
+                            height: 29px;
+                            display: inline-block;
+                            vertical-align: middle;
                             overflow: hidden;
-                            border-bottom: 1px solid #ededed;
-                            &.bg{
-                                background-color: #f9f9f9;
+                            font-family: Arial;
+                            color: #fff;
+                            font-size: 18px;
+                            text-align: center;
+                            line-height: 29px;
+                            font-style: normal;
+                            background-position: 0 -95px;
+                            &.fTwoI {
+                                background-position: -30px -95px;
                             }
-                        } 
-                        .subItem-tit{
-                            width:205px;
+                            &.fThreeI {
+                                background-position: -61px -95px;
+                            }
+                            &.fFourI {
+                                background-position: -94px -95px;
+                            }
+                            &.fFiveI {
+                                background-position: 0 -207px;
+                            }
                         }
-                        .sbItem-con{
-                            width: 205px;
-                            a{
-                                width:48px;
-                                margin-right: 10px;
-                                height:24px;
-                                line-height: 24px;
-                                text-align:left;
+                        span {
+                            height: 40px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            color: #333;
+                            font-size: 17px;
+                            margin-left: 10px;
+                            font-family: "微软雅黑"
+                        }
+                    }
+                    
+                    .link {
+                        float: right;
+                        height: 40px;
+                        li {
+                            float: left;
+                            height: 40px;
+                            line-height: 22px;
+                            a {
+                                display: inline-block;
+                                height: 22px;
+                                padding: 0 7px;
+                                color: #999;
+                                margin-top: 9px;
+                                &.last {
+                                    margin-top: 5px;
+                                    padding: 4px 7px;
+                                    color: #fff;
+                                    
+                                    height: 21px;
+                                    border-radius: 2px;
+                                }
                             }
                         }
                     }
                 }
-                &.hd-n8{
-                    i{
-                        background-position: -90px -265px;
+                .contentBox {
+                    .top {
+                        border-left: 1px solid #ececec;
+                        border-right: 1px solid #ececec;
+                        border-bottom: 1px solid #ececec;
+                        border-top: 2px solid #c94b56;
+                        height: 485px;
+                        overflow: hidden;
+                        .left {
+                            height: 485px;
+                            width: 210px;
+                            float: left;
+                            position: relative;
+                            overflow: hidden;
+                            .pics {
+                                width: 600%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                li {
+                                    float: left;
+                                }
+                            }
+                            .btns {
+                                height: 12px;
+                                width: 100%;
+                                position: absolute;
+                                bottom: 10px;
+                                left: 0;
+                                text-align: center;
+                                li {
+                                    display: inline-block;
+                                    width: 12px;
+                                    height: 12px;
+                                    background: #ffffff;
+                                    border-radius: 50%;
+                                    margin: 0 5px;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                    &.active {
+                                        background: #fc5422;
+                                    }
+                                }
+                                &.bto171 {
+                                    bottom: 171px;
+                                }
+                            }
+                            .bottom {
+                                position:absolute;
+                                left:0;
+                                bottom: 0;
+                                height: 161px;
+                                float: left;
+                                width: 186px;
+                                border-right: 1px solid #ececec;
+                                background: #f9f9f9;
+                                height: 131px;
+                                padding: 20px 10px 10px 14px;
+                                h3 {
+                                    color: #cc0000;
+                                    font-weight: bold;
+                                    i {
+                                        width: 3px;
+                                        height: 3px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        background: #d02229;
+                                        overflow: hidden;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                p {
+                                    padding-left: 8px;
+                                    width: 178px;
+                                    height: 40px;
+                                    line-height: 18px;
+                                    overflow: hidden;
+                                    margin-top: 5px;
+                                    a {
+                                        display: inline-block;
+                                        font-size: 12px;
+                                        width: 48px;
+                                        height: 18px;
+                                        line-height: 18px;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                            height: 485px;
+                            width: 985px;
+                            float: right;
+                            li {
+                                float: left;
+                                width: 196px;
+                                height: 232px;
+                                border-bottom: 1px solid #ececec;
+                                border-left: 1px solid #ececec;
+                                position: relative;
+                                padding-top: 10px;
+                                z-index: 1;
+                                img {
+                                    display: block;
+                                    padding: 0 18px;
+                                }
+                                p {
+                                    margin-top: 5px;
+                                    padding: 0 18px;
+                                    height: 32px;
+                                    overflow: hidden;
+                                }
+                                strong {
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    font-family: "微软雅黑";
+                                    color: #CD0100;
+                                    display: inline;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
                     }
-                    .dropTitleBox {
-                        width: 89px;
-                    }  
-                   
+                    .bottom {
+                        height: 161px;
+                        border-left: 1px solid #ececec;
+                        border-right: 1px solid #ececec;
+                        border-bottom: 1px solid #ececec;
+                        .left {
+                            height: 161px;
+                            float: left;
+                            width: 186px;
+                            border-right: 1px solid #ececec;
+                            background: #f9f9f9;
+                            height: 131px;
+                            padding: 20px 10px 10px 14px;
+                            h3 {
+                                color: #cc0000;
+                                font-weight: bold;
+                                i {
+                                    width: 3px;
+                                    height: 3px;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    background: #d02229;
+                                    overflow: hidden;
+                                    margin-right: 5px;
+                                }
+                            }
+                            p {
+                                padding-left: 8px;
+                                width: 178px;
+                                height: 40px;
+                                line-height: 18px;
+                                overflow: hidden;
+                                margin-top: 5px;
+                                a {
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    width: 48px;
+                                    height: 18px;
+                                    line-height: 18px;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                        .right {
+                            height: 161px;
+                            width: 985px;
+                            float: right;
+                            .topTenNavBox {
+                                height: 32px;
+                                line-height: 32px;
+                                padding: 0 12px;
+                                overflow: hidden;
+                                h3 {
+                                    float: left;
+                                    i {
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        width: 11px;
+                                        height: 13px;
+                                        overflow: hidden;
+                                        background-position: -38px 0;
+                                    }
+                                    span {
+                                        font-size: 12px;
+                                        color: #d43d4e;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin-left: 5px;
+                                    }
+                                }
+                                .topTenNav {
+                                    float: right;
+                                    height: 32px;
+                                    a {
+                                        padding: 0 10px;
+                                    }
+                                    .on {
+                                        color: #cc0000;
+                                        text-decoration: none;
+                                        height: 32px;
+                                    }
+                                }
+                            }
+                            .content {
+                                width: 100%;
+                                height: 100px;
+                                position: relative;
+                                ul {
+                                    padding-top: 10px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    li {
+                                        float: left;
+                                        width: 190px;
+                                        margin-top: 10px;
+                                        padding-right: 7px;
+                                        .conPic {
+                                            float: left;
+                                        }
+                                        .txt {
+                                            float: left;
+                                            strong {
+                                                font-size: 15px;
+                                                font-weight: normal;
+                                                color: #CD0100;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                &.hd-n9{
-                    .servPhone{
-                        color: #c00;
-                        padding-left: 5px
+            }
+            .main2 {
+                height: 349px;
+                width: 100%;
+                margin-top: 10px;
+                .titleBox {
+                    height: 43px;
+                    width: 100%;
+                    position: relative;
+                    li {
+                        float: left;
+                        font-size: 16px;
+                        width: 90px;
+                        height: 43px;
+                        line-height: 43px;
+                        text-align: center;
+                        margin-right: 15px;
+                        cursor: pointer;
+                        font-family: "微软雅黑";
+                        overflow: hidden;
+                    }
+                    .point {
+                        border-bottom: 2px solid #dd102e;
+                        height: 7px;
+                        position: absolute;
+                        left: 0;
+                        width: 90px;
+                        top: 36px;
+                        text-align: center;
+                        z-index: 1;
+                        overflow: hidden;
+                        b {
+                            border-width: 10px;
+                            border-style: dashed dashed solid;
+                            border-color: transparent transparent #dd102e;
+                            display: inline-block;
+                            overflow: hidden;
+                            font-size: 0;
+                            height: 0;
+                            width: 0;
+                            margin-top: -8px;
+                        }
+                    }
+                }
+                .content {
+                    height: 274px;
+                    border: 1px solid #ededed;
+                    background: #fff;
+                    padding: 15px 0 15px 15px;
+                    overflow: hidden;
+                    position: relative;
+                    ul {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: none;
+                        &.active {
+                            display: block;
+                        }
+                        li {
+                            float: left;
+                            width: 180px;
+                            height: 80px;
+                            position: relative;
+                            margin: 0 17px 17px 0;
+                            overflow: hidden;
+                            img {
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .main3 {
+                height: 174px;
+                margin-top: 10px;
+                .titleBox {
+                    height: 40px;
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 7px;
+                        height: 18px;
+                        background: #ff9000;
+                        float: left;
+                        margin-top: 11px;
+                    }
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 17px;
+                        color: #333;
+                        font-family: "微软雅黑";
+                        margin-left: 10px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                    s {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 9px;
+                        height: 9px;
+                        overflow: hidden;
+                        background: #cc0000;
+                        ;
+                        margin-left: 14px;
+                        cursor: pointer;
+                        float: right;
+                        margin-top: 15px;
+                    }
+                }
+                .content {
+                    border: 1px solid #ececec;
+                    background: #fff;
+                    padding: 4px 0px 0 4px;
+                    dl {
+                        display: block;
+                        float: left;
+                        width: 597px;
+                        dt {
+                            width: 107px;
+                            float: left;
+                            border-bottom: 4px solid #fff;
+                            overflow: hidden;
+                            height: 60px;
+                            img {
+                                display: block;
+                            }
+                        }
+                        dd {
+                            padding: 5px 8px;
+                            width: 463px;
+                            height: 50px;
+                            float: left;
+                            color: #afafaf;
+                            overflow: hidden;
+                            border-bottom: 4px solid #fff;
+                            position: relative;
+                            a {
+                                background: #fff;
+                                display: inline-block;
+                                height: 25px;
+                                vertical-align: middle;
+                                line-height: 25px;
+                                padding: 0 8px;
+                                color: #666;
+                            }
+                        }
                     }
                 }
             }
@@ -206,112 +1159,3 @@
     }
 }
 
-.topFocusBox{
-    a{
-        display:block;
-        height:90px;
-        width:100%;
-        background: url("../img/topfocusbox.jpg") no-repeat center top scroll;
-    }
-}
-.midlHeader{
-   width:100%;
-   .midHeaderCon{
-       @include content(125px);
-       
-       .headerLogo{
-            width: 257px;
-            height: 65px;
-            margin-top :30px;
-            overflow : hidden;
-            float : left;
-            .jxwLogo,.home_logogi{
-                float : left;
-                img{
-                    display:block;
-                }
-            }
-            
-       }
-       .headerSearch{
-            float:left; 
-            
-            position: relative;
-            margin: 32px 0 0 20px;
-           .searchHome{
-                height: 32px;
-                border: 3px solid #c00;
-                
-                .search-form{
-                    width:439px;
-                    height: 22px;
-                    line-height: 22px;
-                    padding: 5px;
-                    border: 0 none;
-                    color: #666;
-                    float: left;
-                }
-                .search-btn{
-                    width: 85px;
-                    height: 32px;
-                    line-height: 32px;
-                    text-align: center;
-                    border: 0;
-                    font-size: 16px;
-                    color: #fff;
-                    background: #c00;
-                    font-family: "微软雅黑";
-                    float: right;
-                    cursor: pointer;
-                }
-           
-           }
-           .hotWords {
-               padding-top: 5px;
-               p{
-                    height: 18px;
-                    line-height: 18px;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    position: relative;
-                    left: -8px;
-                    z-index: 1;
-                    a{
-                        float: left;
-                        display: inline-block;
-                        color: #999;
-                        padding: 0 8px;
-                        height: 18px;
-                        position: relative;
-                        
-                    }
-                    s{
-                        display: block;
-                        height: 12px;
-                        width: 0;
-                        font-size: 0;
-                        line-height: 0;
-                        border-left: 1px solid #999;
-                        position: absolute;
-                        left: -1px;
-                        top: 3px;
-                    }
-               }
-              
-           }
-       }
-       .headerProtect{
-           height:64px;
-           width:363px;
-           float: right;
-           margin-top:33px;
-           background: url(../img/headerProPic1.png) no-repeat top left;
-       }
-   }
-}
-.navWrap{
-    width:100%;
-    height:34px;
-    background:#900;
-    position:relative;
-}

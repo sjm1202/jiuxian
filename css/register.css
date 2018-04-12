@@ -1,0 +1,222 @@
+@charset "UTF-8";
+.publicIcon {
+  background: url(../img/public-24.png) no-repeat;
+}
+
+.newIndexIcon {
+  background: url(../img/newIndexIcon-24.png) no-repeat;
+}
+
+.headerWrap {
+  width: 100%;
+}
+.headerWrap .header {
+  height: 88px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.headerWrap .header .left {
+  float: left;
+  height: 63px;
+  margin-top: 15px;
+  width: 257px;
+}
+.headerWrap .header .left a {
+  display: inline-block;
+  height: 63px;
+  width: 140px;
+  background: url(../img/reg/left.jpg) no-repeat left top scroll;
+}
+.headerWrap .header .right {
+  float: right;
+  color: #999;
+  margin-top: 48px;
+  height: 14px;
+  line-height: 14px;
+}
+.headerWrap .header .right span {
+  margin-right: 20px;
+}
+.headerWrap .header .right a.login {
+  display: inline-block;
+  margin-right: 20px;
+  color: #0066cc;
+}
+.headerWrap .header .right .help {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+.headerWrap .header .right .help ul {
+  width: 85px;
+  position: absolute;
+  padding: 30px 0 0px 0px;
+  border: 1px solid #ccc;
+  left: -10px;
+  top: -12px;
+  display: none;
+  z-index: 100;
+}
+.headerWrap .header .right .help ul li {
+  height: 20px;
+  border-top: 1px dashed #ccc;
+  line-height: 20px;
+  padding-left: 10px;
+  background: #fff;
+}
+.headerWrap .header .right .help p s {
+  float: right;
+  background: url(../img/reg/regLogin-8.png) no-repeat 0 0;
+  display: inline-block;
+  background-position: -23px 0;
+  width: 15px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+.mainWrap {
+  width: 100%;
+  background: url(../img/reg/registerBg.jpg) repeat-x scroll left top;
+  padding: 70px 0 50px;
+  height: 600px;
+}
+.mainWrap .main {
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  border: 2px solid #eaeaea;
+}
+.mainWrap .main .tit {
+  height: 34px;
+  width: 280px;
+  position: absolute;
+  right: 0;
+  top: -36px;
+}
+.mainWrap .main .tit li {
+  float: left;
+  border: 2px solid #eaeaea;
+  height: 32px;
+  text-align: center;
+  margin-right: 10px;
+  width: 120px;
+  border-bottom: none;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  line-height: 34px;
+  font-size: 16px;
+  color: #fff;
+  background: #ff9900;
+}
+.mainWrap .main .tit li.active {
+  color: #ff9900;
+  background: #fff;
+  height: 34px;
+}
+.mainWrap .main .content {
+  width: 200%;
+}
+.mainWrap .main .content li {
+  width: 784px;
+  padding: 55px 0 0 125px;
+  float: left;
+}
+.mainWrap .main .content li .regAccInfor {
+  margin-top: 15px;
+}
+.mainWrap .main .content li .regAccInfor input {
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  border: 1px solid #dcdcdc;
+  font-size: 16px;
+}
+.mainWrap .main .content li .regAccInfor .xieyi {
+  color: #0066cc;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox {
+  height: 42px;
+  width: 302px;
+  float: left;
+  position: relative;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regIcon {
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  background: url(../img/reg/regLogin-8.png) no-repeat 0 0;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regIcon.accName {
+  background-position: -48px 2px;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regIcon.accCap {
+  background-position: -422px 2px;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regIcon.accCheck {
+  background-position: -259px 1px;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regIcon.accPwd {
+  background-position: -77px 2px;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regInput {
+  width: 255px;
+  padding-left: 45px;
+  background: none;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regInput.phoneCheck {
+  width: 100px;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regBtn {
+  width: 145px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.mainWrap .main .content li .regAccInfor .regInputBox .regSub {
+  width: 302px;
+  height: 42px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  background: #e10303;
+  cursor: pointer;
+}
+.mainWrap .main .content li .regAccInfor .regLabel {
+  width: 230px;
+  height: 42px;
+  line-height: 42px;
+  text-align: right;
+  font-size: 16px;
+  padding-right: 30px;
+  float: left;
+}
+
+.footerWrap {
+  width: 100%;
+}
+.footerWrap .footer {
+  width: 1000px;
+  height: 135px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.footerWrap .footer p {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.footerWrap .footer p.emp {
+  color: red;
+}
+
+/*# sourceMappingURL=register.css.map */

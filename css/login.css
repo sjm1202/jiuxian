@@ -1,0 +1,328 @@
+.publicIcon {
+  background: url(../img/public-24.png) no-repeat;
+}
+
+.newIndexIcon {
+  background: url(../img/newIndexIcon-24.png) no-repeat;
+}
+
+.loginIcon {
+  background: url(../img/reg/regLogin-8.png) no-repeat 0 0;
+}
+
+.headerWrap {
+  width: 100%;
+}
+.headerWrap .header {
+  height: 88px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.headerWrap .header .left {
+  float: left;
+  height: 63px;
+  margin-top: 15px;
+  width: 257px;
+}
+.headerWrap .header .left a {
+  display: inline-block;
+  height: 63px;
+  width: 140px;
+  background: url(../img/reg/left.jpg) no-repeat left top scroll;
+}
+.headerWrap .header .right {
+  float: right;
+  color: #999;
+  margin-top: 48px;
+  height: 14px;
+  line-height: 14px;
+}
+.headerWrap .header .right span {
+  margin-right: 20px;
+}
+.headerWrap .header .right a.login {
+  display: inline-block;
+  margin-right: 20px;
+  color: #0066cc;
+}
+.headerWrap .header .right .help {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+.headerWrap .header .right .help ul {
+  width: 85px;
+  position: absolute;
+  padding-top: 30px;
+  border: 1px solid #ccc;
+  left: -10px;
+  top: -12px;
+  display: none;
+}
+.headerWrap .header .right .help ul li {
+  height: 20px;
+  border-top: 1px dashed #ccc;
+  line-height: 20px;
+  padding-left: 10px;
+  background: #fff;
+}
+.headerWrap .header .right .help p s {
+  float: right;
+  background: url(../img/reg/regLogin-8.png) no-repeat 0 0;
+  display: inline-block;
+  background-position: -23px 0;
+  width: 15px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+.mainWrap {
+  width: 100%;
+  padding: 0 0 50px;
+  height: 600px;
+  background: url(../img/login/loginBg.jpg) center top no-repeat;
+  min-width: 1000px;
+}
+.mainWrap .main {
+  width: 1000px;
+  margin: 0 auto;
+}
+.mainWrap .main .picFocus {
+  display: block;
+  height: 600px;
+  width: 650px;
+  float: left;
+}
+.mainWrap .main .formBox {
+  height: 405px;
+  width: 270px;
+  background: #fff;
+  margin-top: 100px;
+  float: left;
+  padding: 0 40px;
+  position: relative;
+}
+.mainWrap .main .formBox .erweiTit {
+  background-position: 0 -230px;
+  width: 65px;
+  height: 65px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  cursor: pointer;
+}
+.mainWrap .main .formBox .erweiCon {
+  height: 405px;
+  width: 270px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  padding: 0 40px;
+}
+.mainWrap .main .formBox .erweiCon h2 {
+  height: 40px;
+  line-height: 40px;
+  padding: 20px 0;
+}
+.mainWrap .main .formBox .erweiCon .erwei {
+  height: 150px;
+  position: relative;
+  padding: 10px 0;
+  width: 270px;
+}
+.mainWrap .main .formBox .erweiCon .erwei img {
+  display: block;
+  height: 150px;
+  position: absolute;
+}
+.mainWrap .main .formBox .erweiCon .erwei img.erweiMa {
+  top: 10px;
+  left: 60px;
+}
+.mainWrap .main .formBox .erweiCon .erwei img.phonePic {
+  top: 10px;
+  left: 135px;
+  display: none;
+}
+.mainWrap .main .formBox .erweiCon .link {
+  float: right;
+  margin-top: 20px;
+}
+.mainWrap .main .formBox .erweiCon .link a {
+  padding: 10px;
+}
+.mainWrap .main .formBox .loginTit {
+  height: 40px;
+  margin: 14px 0 19px;
+  border-bottom: 1px dotted #ccc;
+}
+.mainWrap .main .formBox .loginTit li {
+  height: 40px;
+  font-size: 17px;
+  color: #ccc;
+  line-height: 40px;
+  float: left;
+  margin-right: 15px;
+}
+.mainWrap .main .formBox .loginTit li a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.mainWrap .main .formBox .loginTit li a:hover {
+  color: blue;
+}
+.mainWrap .main .formBox .loginTit li a.active {
+  color: #cc0000;
+  font-weight: bold;
+}
+.mainWrap .main .formBox .loginCon {
+  width: 200%;
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+.mainWrap .main .formBox .loginCon li {
+  width: 270px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.mainWrap .main .formBox .loginCon li .inputBox {
+  height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .inTxt {
+  width: 173px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 45px 0 50px;
+  color: #999;
+  border: 1px solid #dcdcdc;
+  font-weight: 700;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .inTxt.ckM {
+  width: 95px;
+  padding-right: 0px;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .ckMBtn {
+  height: 40px;
+  width: 115px;
+  border: 0;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .loginBtn {
+  height: 42px;
+  width: 270px;
+  font-size: 17px;
+  color: #fff;
+  background: #cc0000;
+  border: 0;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .left {
+  float: left;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .right {
+  float: right;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .loginIcon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .userI {
+  background-position: -51px 0;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .mmI {
+  background-position: -83px 0;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .yzI {
+  background-position: -426px 0;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .dxI {
+  background-position: -263px -2px;
+}
+.mainWrap .main .formBox .loginCon li .inputBox .checkNum {
+  display: inline-block;
+  background: #fff;
+  height: 29px;
+  width: 80px;
+  position: absolute;
+  top: 2px;
+  padding: 5px;
+  right: 3px;
+  font-size: 29px;
+  line-height: 29px;
+  color: blue;
+}
+.mainWrap .main .formBox .loginOther {
+  height: 40px;
+  border-top: 1px dotted #ccc;
+  padding-top: 15px;
+  line-height: 40px;
+}
+.mainWrap .main .formBox .loginOther span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+.mainWrap .main .formBox .loginOther a {
+  float: left;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+.mainWrap .main .formBox .loginOther a.qq {
+  background-position: 0 -35px;
+}
+.mainWrap .main .formBox .loginOther a.qq:hover {
+  background-position: 0 -86px;
+}
+.mainWrap .main .formBox .loginOther a.weibo {
+  background-position: -51px -35px;
+}
+.mainWrap .main .formBox .loginOther a.weibo:hover {
+  background-position: -51px -86px;
+}
+.mainWrap .main .formBox .loginOther a.zfubao {
+  background-position: -102px -35px;
+}
+.mainWrap .main .formBox .loginOther a.zfubao:hover {
+  background-position: -102px -86px;
+}
+.mainWrap .main .formBox .loginOther a.baidu {
+  background-position: -153px -35px;
+}
+.mainWrap .main .formBox .loginOther a.baidu:hover {
+  background-position: -153px -86px;
+}
+
+.footerWrap {
+  width: 100%;
+}
+.footerWrap .footer {
+  width: 1000px;
+  height: 135px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.footerWrap .footer p {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.footerWrap .footer p.emp {
+  color: red;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,82 @@
+@charset "utf-8";
+body,
+html {
+    height: 100%;
+}
+
+.publicIcon {
+    background: url(../img/public-24.png) no-repeat;
+}
+
+.newIndexIcon {
+    background: url(../img/newIndexIcon-24.png) no-repeat;
+}
+
+//rightSidebarBox
+.rightSidebarBox {
+    width: 35px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    .rightSidebar {
+        height: 100%;
+        width: 35px;
+        .rightSidebarCon {
+            width: 35px;
+            height: 365px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -182.5px;
+            text-align: center;
+            .rSidebarItem {
+                width: 35px;
+                position: relative;
+                .rsItemName {
+                    width: 35px;
+                    padding: 10px 0;
+                    position: relative;
+                    cursor: pointer;
+                    text-align: center;
+                    i {
+                        width: 19px;
+                        height: 19px;
+                        display: inline-block;
+                        &.user-i {
+                            background-position: 0 -163px;
+                        }
+                        &.collect-i {
+                            background-position: -40px -163px;
+                        }
+                        &.cart-i {
+                            background-position: -120px -163px;
+                        }
+                        &.online-i {
+                            background-position: -45px -331px;
+                        }
+                        &.coupons-i {
+                            background-position: -85px -331px;
+                        }
+                    }
+                    span {
+                        display: block;
+                        font-family: "微软雅黑";
+                        line-height: 16px;
+                        color: #333333;
+                        padding: 2px 0 0;
+                        &.coupons-n,
+                        &.cart-n {
+                            width: 14px;
+                            font-size: 14px;
+                            margin: 0 10px 0 11px;
+                            padding: 6px 0 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

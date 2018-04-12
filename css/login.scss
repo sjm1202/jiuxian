@@ -1,0 +1,335 @@
+@charset "utf-8";
+.publicIcon {
+    background: url(../img/public-24.png) no-repeat;
+}
+
+.newIndexIcon {
+    background: url(../img/newIndexIcon-24.png) no-repeat;
+}
+.loginIcon{
+    background: url(../img/reg/regLogin-8.png) no-repeat 0 0;
+}
+.headerWrap {
+    width: 100%;
+    .header {
+        height: 88px;
+        width: 1000px;
+        margin: 0 auto;
+        .left {
+            float: left;
+            height: 63px;
+            margin-top: 15px;
+            width: 257px;
+            a {
+                display: inline-block;
+                height: 63px;
+                width: 140px;
+                background: url(../img/reg/left.jpg) no-repeat left top scroll;
+            }
+        }
+        .right {
+            float: right;
+            color: #999;
+            margin-top: 48px;
+            height: 14px;
+            line-height: 14px;
+            span {
+                margin-right: 20px;
+            }
+            a.login {
+                display: inline-block;
+                margin-right: 20px;
+                color: #0066cc;
+            }
+            .help {
+                display: inline-block;
+                position: relative;
+                margin-right: 10px;
+                ul {
+                    width: 85px;
+                    position: absolute;
+                    padding-top: 30px;
+                    border: 1px solid #ccc;
+                    left: -10px;
+                    top: -12px;
+                    display: none;
+                    li {
+                        height: 20px;
+                        border-top: 1px dashed #ccc;
+                        line-height: 20px;
+                        padding-left: 10px;
+                        background:#fff;
+                    }
+                }
+                p {
+                    s {
+                        float: right;
+                        background: url(../img/reg/regLogin-8.png) no-repeat 0 0;
+                        display: inline-block;
+                        background-position: -23px 0;
+                        width: 15px;
+                        height: 14px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.mainWrap{
+    width: 100%;
+    padding: 0 0 50px;
+    height: 600px;
+    background: url(../img/login/loginBg.jpg) center top no-repeat;
+    min-width: 1000px;
+    .main{
+        width: 1000px;
+        margin:0 auto;
+        .picFocus{
+            display:block;
+            height:600px;
+            width:650px;
+            float:left;
+        }
+        .formBox{
+            height:405px;
+            width:270px;
+            background: #fff;
+            margin-top:100px;
+            float:left;
+            padding:0 40px;
+            //overflow: hidden;
+            position:relative;
+            .erweiTit{
+                background-position: 0 -230px;
+//              background-position: -80px -230px;
+                width: 65px;
+                height: 65px;
+                display: block;
+                position:absolute;
+                top:0;
+                right:0;
+                z-index: 200;
+                cursor: pointer;
+            }
+            .erweiCon{
+                height:405px;
+                width:270px;
+                background: #fff;
+                position:absolute;
+                top:0;
+                left:0;
+                z-index: 100;
+                display:none;
+                padding:0 40px;
+                h2{
+                    height:40px;
+                    line-height:40px;
+                    padding:20px 0;
+                }
+                .erwei{
+                    height:150px;
+                    position:relative;
+                    padding:10px 0;
+                    width:270px;
+                    img{
+                        display:block;
+                        height:150px;
+                        position: absolute;
+                        &.erweiMa{
+                            top:10px;
+                            left:60px;
+                            //left:-15px;
+                        }
+                        &.phonePic{
+                            top:10px;
+                            left:135px;
+                            display: none;
+                        }
+                    }
+                }
+                .link{
+                    float:right;
+                    margin-top:20px;
+                    a{
+                        padding:10px;
+                    }
+                }
+            }
+            .loginTit{
+                height:40px;
+                margin:14px 0 19px;
+                border-bottom:1px dotted #ccc;
+                li{
+                    height:40px;
+                    font-size:17px;
+                    color:#ccc;
+                    line-height:40px;
+                    float:left;
+                    margin-right:15px;
+                    a{
+                        display:inline-block;
+                        padding-right:15px;
+                        
+                        &:hover{
+                            color:blue;
+                        }
+                        &.active{
+                            color:#cc0000;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            
+            }
+            .loginCon{
+                width:200%;
+                height:270px;
+                position:relative;
+                overflow: hidden;
+                li{
+                    
+                    width:270px;
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    z-index: 0;
+                    .inputBox{
+                        height:40px;
+                        margin-bottom: 20px;
+                        position: relative;
+                        .inTxt{
+                            width: 173px;
+                            height:40px;
+                            line-height: 40px;
+                            padding: 0 45px 0 50px;
+                            color: #999;
+                            border: 1px solid #dcdcdc;
+                            font-weight: 700;
+                            &.ckM{
+                                width:95px;
+                                padding-right:0px;
+                                
+                            }
+                        }
+                        .ckMBtn{
+                            height:40px;
+                            width:115px;
+                            border:0;
+                        }
+                        .loginBtn{
+                            height:42px;
+                            width:270px;
+                            font-size:17px;
+                            color:#fff;
+                            background: #cc0000;
+                            border:0;
+                        }
+                        .left{
+                            float: left;
+                        }
+                        .right{
+                            float:right;
+                        }
+                        .loginIcon{
+                            display:inline-block;
+                            width: 20px;
+                            height: 20px;
+                            position:absolute;
+                            top:10px;
+                            left:11px;
+                        }
+                        .userI{
+                            background-position: -51px 0;
+                        }
+                        .mmI{
+                            background-position: -83px 0;
+                        }
+                        .yzI{
+                            background-position: -426px 0;
+                        }
+                        .dxI{
+                            background-position: -263px -2px;
+                        }
+                        .checkNum{
+                            display: inline-block;
+                            background: #fff;
+                            height:29px;
+                            width:80px;
+                            position:absolute;
+                            top:2px;
+                            padding:5px;
+                            right:3px;
+                            font-size:29px;
+                            line-height:29px;
+                            color:blue;
+                        }
+                    }
+                }
+            }
+            .loginOther{
+                height:40px;
+                border-top:1px dotted #ccc;
+                padding-top:15px;
+                line-height:40px;
+                span{
+                    display:inline-block;
+                    height:30px;
+                    line-height:30px;
+                    float: left;
+                }
+                a{
+                    float: left;
+                    display:inline-block;
+                    height:30px;
+                    width:30px;
+                    margin-left: 10px;;
+                    &.qq{
+                        background-position: 0 -35px;
+                        &:hover{
+                            background-position: 0 -86px;
+                        }
+                    }
+                    &.weibo{
+                        background-position: -51px -35px;
+                        &:hover{
+                            background-position: -51px -86px;
+                        }
+                    }
+                    &.zfubao{
+                        background-position: -102px -35px;
+                        &:hover{
+                            background-position: -102px -86px;
+                        }
+                    }
+                    &.baidu{
+                        background-position: -153px -35px;
+                        &:hover{
+                            background-position: -153px -86px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+.footerWrap {
+    width: 100%;
+    .footer {
+        width: 1000px;
+        height: 135px;
+        padding-top: 10px;
+        margin: 0 auto;
+        p {
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            &.emp {
+                color: red;
+            }
+        }
+    }
+}
